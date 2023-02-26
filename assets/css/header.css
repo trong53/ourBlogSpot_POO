@@ -1,0 +1,46 @@
+
+/************************** Header of site **************************/
+header {
+    width : 100%;
+    background-image: url("../img/blog_background.jpg");
+    height: 11vh;
+    display : flex;
+    align-items: center;
+}
+header .logo{
+    margin-left : 20%;
+    margin-bottom: 10px;  
+}
+header .logo a{
+    font-family: 'font_logo', sans-serif;
+    background: linear-gradient(to right, rgb(2, 2, 167) 0%, rgb(126, 2, 126) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 600;
+    font-size: 3.5rem;
+    padding : 5px 10px;
+    letter-spacing: 3px;
+}
+header .sign {
+    margin : 0 1%;
+    font-size : 1.5rem;
+    font-weight: 600;
+    color : rgb(124, 4, 223);
+}
+header .sign a {
+    color : rgb(89, 45, 248);
+    transition: all 0.3s ease-in-out;
+}
+header .sign:hover a {
+    color : rgb(17, 0, 255);
+    text-decoration: underline;
+}
+header .user {
+    margin-left : auto;
+    font-weight : 600;
+    text-transform: uppercase;
+}
+header .signup {
+    margin-right : 2%;
+    
+}

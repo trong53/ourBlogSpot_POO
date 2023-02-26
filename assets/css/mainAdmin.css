@@ -1,0 +1,181 @@
+.admin-main {
+    width: 100%;
+    min-height : 89vh;
+    display: flex;
+    --nav_width: 240px;
+    --nav_margin: 15px;
+}
+.admin-navbar {
+    width: var(--nav_width);
+    min-height: 89vh;
+    background-image: url("../img/blog_background.jpg");
+    color : black;
+    font-size: 1.2rem;
+    margin-left: calc(-1*var(--nav_margin));
+}
+.admin-navbar a {
+    color: black;
+}
+.admin-navbar ul {
+    list-style: none;
+}
+.list-item {
+    min-height: 100px;
+}
+.list-item-user,.list-item-article {
+    position: relative;
+    width : 60%;
+    margin-bottom: 100px;
+}
+.list-item-title {
+    color : black;
+    font-size: 1.5rem;
+}
+.sub-list-user {
+    position: absolute;
+    top: 35px;
+    left: -30px;
+    z-index: 1;
+    width : 200px;
+    transition: all 0.7s ease-in-out;
+}
+.sub-list-article {
+    position: absolute;
+    top: 35px;
+    left: -30px;
+    z-index: 1;
+    width : 200px;
+    transition: all 0.7s ease-in-out;
+}
+.sub-list-article a, .sub-list-user a {
+    line-height: 1.5;
+}
+.list-item-user:hover .list-item-title {
+    font-weight: 600;
+}
+.sub-list-user a:hover {
+    font-weight: 600;
+}
+.list-item-article:hover .list-item-title {
+    font-weight: 600;
+}
+.sub-list-article a:hover {
+    font-weight: 600;
+}
+.admin-content {
+    width: calc(100vw - var(--nav_width) + var(--nav_margin));
+    padding: 20px;
+}
+/******************************* Tables All_Users **************************************/
+.all-users {
+    width : 96%;
+    border: 2px solid black;
+    margin: 2%;
+    text-align: center;
+}
+
+.all-users td {
+    border: 1px solid rgb(53, 53, 53);
+    padding: 5px 10px;
+}
+.all-users thead, .all-users tfoot {
+    background-color: rgb(97, 96, 96);
+    color: #fff;
+}
+.admin-filter {
+    width : 120px;
+}
+.homepage-admin {
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.homepage-admin h1 {
+    font-size: 70px;
+}
+.user-status button {
+    margin : 0 5px;
+}
+.user-restriction:hover {
+    color: rgb(247, 3, 3);
+}
+.user-unrestriction:hover {
+    color: rgb(3, 241, 3);
+}
+.user-unrestriction-font {
+    color: rgb(3, 241, 3);
+    font-weight: 600;
+}
+.user-restriction-font {
+    color: rgb(247, 3, 3);
+    font-weight: 600;
+}
+.graph-container {
+    width : 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap : 60px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.active-users {
+    width : 80%;
+    background-color: rgb(238, 236, 236);
+}
+.graph-title {
+    font-size: 1.5rem;
+    color : blue;
+    font-weight: 600;
+    text-align: center;
+    margin: 20px 0 50px 0;
+}
+.options {
+    display: flex;
+    width : 100%;
+    margin-top : 25px;
+}
+.active-users-line-chart, .active-users-bar-chart, .active-users-doughnut-chart, .active-users-pie-chart,
+.abonnement-stat-line-chart, .abonnement-stat-bar-chart, .abonnement-stat-doughnut-chart, .abonnement-stat-pie-chart
+{
+    background-color: rgb(46, 252, 252);
+    width : 25%;
+    padding : 10px 5px;
+    text-align: center;
+    margin : 10px;
+    cursor: pointer;
+}
+.abonnement-stat {
+    width : 80%;
+    background-color: rgb(238, 236, 236);
+    position: relative;
+}
+.abonnement-stat-title {
+    margin: 20px 0 20px 0;
+}
+.year-selection {
+    margin: 20px;
+    font-size: 1.5rem;
+}
+.year-selection-year {
+    font-size: 1.5rem;
+    width : 90px;
+    padding-left: 15px;
+}
+.selected-type {
+    background-color: rgb(2, 155, 155);
+    color: white;
+}
+.annoncement {
+    display: none;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+}
+.develop {
+    font-size: 2rem;
+    margin-top: 150px;
+    text-align: center;
+}

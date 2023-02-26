@@ -1,0 +1,4 @@
+config.php
+assets/tools/ckeditor/
+node_modules/
+vendor/

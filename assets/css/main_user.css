@@ -1,0 +1,48 @@
+.guest-homepage-user {
+    width: 90%;
+}
+.guest-homepage .addPost {
+    display: flex;
+    justify-content: flex-start;
+}
+.guest-homepage .addPost img {
+    width : 45px;
+}
+.guest-homepage .addPost a {
+    font-size: 1.3rem;
+    color : black;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.user-notification {
+    font-size: 1.5rem;
+    color : red;
+    background-color: rgb(234, 235, 234);
+    box-shadow: rgba(49, 49, 49, 0.35) 0px 5px 15px;
+    width : 50%;
+    height : 200px;
+    text-align: center;
+    position: fixed;
+    left : 25%;
+    top: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-notification-close {
+    position: absolute;
+    right: 10px;
+    top: -5px;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color : black;
+}
+.user-notification-hidden {
+    display: none;
+}
+.message-limited-user {
+    color : red;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
